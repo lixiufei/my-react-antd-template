@@ -5,7 +5,8 @@
 
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import Home from '../pages/Home';
+import Index from '../components/index';
+// import Home from '../pages/Home';
 import Table from '../pages/Table';
 
 class Router extends Component {
@@ -13,7 +14,8 @@ class Router extends Component {
     return (
       <Switch>
         <Redirect path="/" to="/home" exact />
-        <Route path="/home" component={Home} />
+        <Route path="/index" component={Index} />
+        {/* <Route path="/home" component={Home} /> */}
         <Route path="/table" component={Table} />
       </Switch>
     );
