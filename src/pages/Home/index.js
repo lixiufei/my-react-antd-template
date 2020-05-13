@@ -84,16 +84,18 @@ class Home extends Component {
   };
 
   render() {
+    // 生成虚拟dom树
+    console.log('render');
     let { name, param } = this.state;
     return (
       <div>
-        <Welcome names={param} />
         <div className="App">
           <Layout>
             <Content>
               <Button type="primary" onClick={() => this.toggle()}>
                 change name
               </Button>
+              <Welcome names={param} />
               <button type="button" onClick={this.toggleParam.bind()}>
                 change param
               </button>

@@ -10,9 +10,9 @@ const ButtonDemo = LoadableComponent(() => import('../../pages/Table/index'));
 const IconDemo = LoadableComponent(() => import('../../pages/new/index'));
 
 // 输入组件Demo
-const FormDemo1 = LoadableComponent(() => import('../../pages/Home/index'));
-const FormDemo2 = LoadableComponent(() => import('../../pages/Home/index'));
-const UploadDemo = LoadableComponent(() => import('../../pages/Home/index'));
+const FormDemo1 = LoadableComponent(() => import('../../pages/Form/index'));
+const FormDemo2 = LoadableComponent(() => import('../../pages/Form/index'));
+const UploadDemo = LoadableComponent(() => import('../../pages/Form/index'));
 
 @withRouter
 class ContentMain extends React.Component {

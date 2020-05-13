@@ -9,10 +9,12 @@ import React, { Component } from 'react';
 
 class Table extends Component {
   render() {
+    const numbers = [1, 2, 3, 4];
     return (
       <div>
-        <h1>Table</h1>
-        <p>msg: aa</p>
+        <ul>
+          {numbers.map((number) => <li key={number.toString()}>{ number}</li>)}
+        </ul>
       </div>
     );
   }

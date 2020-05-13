@@ -14,7 +14,7 @@ class Welcome extends Component {
       
     };
   }
-  
+
   // 更新过程
   componentWillReceiveProps(nextProps) {
     // 在接受父组件改变后的props需要重新渲染组件时用到的比较多
@@ -24,7 +24,7 @@ class Welcome extends Component {
 
   render() {
     let { names } = this.props;
-    return <h1>{names}</h1>;
+    return <h1>{names ? '呵呵呵' : '哈哈哈'}</h1>;
   }
 }
 export default Welcome;
