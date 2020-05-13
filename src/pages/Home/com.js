@@ -14,6 +14,13 @@ class Welcome extends Component {
       
     };
   }
+  
+  // 更新过程
+  componentWillReceiveProps(nextProps) {
+    // 在接受父组件改变后的props需要重新渲染组件时用到的比较多
+    console.log('componentWillReceiveProps');
+    console.log(nextProps);
+  }
 
   render() {
     let { names } = this.props;
