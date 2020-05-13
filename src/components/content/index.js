@@ -12,7 +12,7 @@ const IconDemo = LoadableComponent(() => import('../../pages/new/index'));
 // 输入组件Demo
 const FormDemo1 = LoadableComponent(() => import('../../pages/Form/index'));
 const FormDemo2 = LoadableComponent(() => import('../../pages/Form/index'));
-const UploadDemo = LoadableComponent(() => import('../../pages/Form/index'));
+const UploadDemo = LoadableComponent(() => import('../../pages/Form/other'));
 
 @withRouter
 class ContentMain extends React.Component {
