@@ -1,6 +1,5 @@
 import React from 'react';
-import { Route, Redirect } from 'react-router-dom';
-import { isAuthenticated } from '../../utils/Session';
+import { Route } from 'react-router-dom';
 
 /*eslint-disable*/
 function test() {
@@ -11,7 +10,7 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route 
     {...rest}
     render={(props) => (
-      isAuthenticated() ? <Component {...props} /> : <Redirect to={{ pathname: '/login', state: { from: props.location } }} />
+      <Component {...props} /> 
     )}
   />
 );

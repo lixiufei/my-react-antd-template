@@ -7,7 +7,7 @@ const Home = LoadableComponent(() => import('../../pages/Home/index')); // 参�
 
 // 基本组件Demo
 const ButtonDemo = LoadableComponent(() => import('../../pages/Table/index'));
-const IconDemo = LoadableComponent(() => import('../../pages/Home/index'));
+const IconDemo = LoadableComponent(() => import('../../pages/new/index'));
 
 // 输入组件Demo
 const FormDemo1 = LoadableComponent(() => import('../../pages/Home/index'));

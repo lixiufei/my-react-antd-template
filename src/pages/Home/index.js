@@ -6,9 +6,10 @@
  */
 
 import React, { Component } from 'react';
-import { Layout } from 'antd';
+import { Layout, Button } from 'antd';
 // import { Link } from 'react-router-dom';
 import './index.css';
+import Welcome from './com';
 
 const { Content } = Layout;
 
@@ -16,32 +17,31 @@ class Home extends Component {
   constructor() {
     super();
     this.state = {
-      collapsed: false
+      name: '测试',
     };
   }
 
   toggle = () => {
-    let { collapsed } = this.state;
-    console.log(collapsed);
+    let { name } = this.state;
+    console.log(name);
     this.setState({
-      collapsed: !collapsed
+      name: '哈哈'
     });
   };
   
   render() {
+    let { name } = this.state;
     return (
       <div>
+        <Welcome names="Sara" />
         <div className="App">
           <Layout>
-            <Content
-              style={{
-                margin: '24px 16px',
-                padding: 24,
-                background: '#fff',
-                minHeight: 280
-              }}
-            >
-              Content
+            <Content>
+              <Button type="primary" onClick={() => this.toggle()}>change</Button>
+              <button type="button" onClick={this.toggle.bind()}>
+                change
+              </button>
+              { name }
             </Content>
           </Layout>
         </div>
